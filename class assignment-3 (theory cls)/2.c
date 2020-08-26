@@ -3,13 +3,16 @@ void listNumbersAsc(int start , int end);
 
 int main()
 {
-    int x,y ;
-    printf("inputs two numbers: \n");
-    scanf("%d %d",&x , &y);
+    int start ,end;
+    printf("input start number: ");
+    scanf("%d",&start);
 
-printf("\nnumbers in ascending order: \n");
-listNumbersAsc(x,y);
-return 0;
+    printf("input end number: ");
+    scanf("%d",&end);
+
+    printf("\nnumbers in ascending order: \n");
+    listNumbersAsc(start , end);
+    return 0;
 }
 
 void listNumbersAsc(int start , int end)
@@ -21,4 +24,3 @@ void listNumbersAsc(int start , int end)
    }
 
 }
-

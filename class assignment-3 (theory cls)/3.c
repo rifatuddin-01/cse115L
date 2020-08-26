@@ -3,22 +3,23 @@ void listNumbersDesc(int start , int end);
 
 int main()
 {
-    int x,y ;
-    printf("inputs two numbers: \n");
-    scanf("%d %d",&x , &y);
+    int start ,end;
+    printf("input start number: ");
+    scanf("%d",&start);
 
-printf("\nnumbers in descending order: \n");
-listNumbersDesc(x,y);
-return 0;
+    printf("input end number: ");
+    scanf("%d",&end);
+
+    printf("\nnumbers in descending order: \n");
+    listNumbersDesc(start , end);
+    return 0;
 }
 
 void listNumbersDesc(int start , int end)
  {
     int i;
-    for(i=start ; i>=end ; i--)
+    for(i=end ; i>=start ;i--)
    {
        printf("%d\n",i);
    }
-
-}
-
+ }
